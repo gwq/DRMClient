@@ -20,6 +20,10 @@ public class danglianURLtest {
 		hul.setDoOutput(false);//当上传文件时，将其设置为true
 		hul.setUseCaches(false);//无缓存
 		hul.setRequestMethod("POST");//设置请求方法
+		hul.setDoInput(true);
+		hul.setInstanceFollowRedirects(true);//允许页面进行自动跳转 
+		hul.setRequestProperty("User-Agent", "Mozilla/5.0");//在连接前加入User-agent，否则连接时可能会引起403错误
+		
 		
 		String respStr ="";
 		String line = "";
