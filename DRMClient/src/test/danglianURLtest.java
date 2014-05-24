@@ -17,7 +17,7 @@ public class danglianURLtest {
 		URL url = new URL("http://192.168.11.7:8080/DRMProject/drmServer");//实例URL
 		hul = (HttpURLConnection)url.openConnection();//打开连接
 		//hul.setConnectTimeout(2000);
-		hul.setDoOutput(false);//当上传文件时，将其设置为true
+		hul.setDoOutput(false);//当上传文件和参数时，将其设置为true
 		hul.setUseCaches(false);//无缓存
 		hul.setRequestMethod("POST");//设置请求方法
 		hul.setDoInput(true);
